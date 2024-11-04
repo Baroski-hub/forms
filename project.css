@@ -1,0 +1,99 @@
+/*--- general style---*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'lato', sans-serif;
+}
+
+
+
+
+
+
+
+/*####### modal styling ##### */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(IMG/classroom.jpg) ;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+#open-btn {
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    width: 350px;
+    height: 80px;
+    font-size: 1.3rem;
+    background: transparent;
+    color: #fff;
+    border: solid 2px #fff;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0 0 3px black;
+    transition: .5s;
+
+}
+
+#open-btn:hover{
+    background-color: #fff;
+    color:#000;
+}
+
+#modal {
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50, -50);
+    width: 200px;
+    padding: 10px 20px;
+    height: 100px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    animation-name: animatemodal;
+    animation-duration: 4s;
+
+
+
+}
+#close-btn{
+    font-size: 3rem;
+}
+#close-btn{
+    cursor: pointer;
+    color: #ff0000;
+    font-size: 3rem;
+}
+
+#modal-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+@keyframes animatemodal{
+    from{
+        top: -300px;
+        opacity: 0;
+
+    }
+     to{
+        top: 50%;
+        opacity: 1;
+    }
+}

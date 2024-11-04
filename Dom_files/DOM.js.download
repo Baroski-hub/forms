@@ -1,0 +1,52 @@
+//GetElementById
+const title = document.getElementById("Main heading");
+title.style.color = 'orange';
+console.log(title);
+const listItems = document.querySelectorAll('.list-items');
+   
+for ( i = 0; i < listItems.length; i++){
+    listItems[i].style.fontSize= '2rem';
+}
+console.log(listItems)
+
+//const ul = document.querySelector('ul');
+const li = document.createElement('li');
+//ul.append(li)
+const firstlistItems = document.querySelector('.list-items');
+console.log(firstlistItems.innerText);
+console.log(firstlistItems.textContent);
+console.log(firstlistItems.innerHTML);
+li.innerText = 'X-men';
+li.setAttribute('id','mainHeading');
+//li.removeAttribute('id')
+li.classList.add('list-items')
+
+//Modifying
+console.log(li.classList.contains('list-items'));
+li.remove();
+//li.classList.revome('list-items')
+
+
+//let ul = document.querySelector('ul');
+//console.log(ul.parentNode.parentNode)
+//console.log(ul.parentElement.parentElement)
+const html = document.documentElement;
+console.log(html);
+
+let ul = document.querySelector('ul');
+console.log(ul.childNodes);
+console.log(ul.firstChild);
+console.log(ul.lastChild);
+
+ul.childNodes[1].style.backgroundColor = "blue";
+ul.childNodes[3].style.backgroundColor = "green";
+ul.childNodes[5].style.backgroundColor = "yellow";
+ul.childNodes[7].style.backgroundColor = "gray";
+ul.childNodes[9].style.backgroundColor = "pink";
+ul.childNodes[11].style.backgroundColor = "violet";
+
+console.log(ul.children);
+console.log(ul.firstElementChild);
+console.log(ul.lastElementChild);
+
+

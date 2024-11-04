@@ -1,0 +1,57 @@
+body{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(IMG/og.jpg) ;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.accordion{
+    width: 65%;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 30px;
+}
+.accordion .accordion-title{
+    margin-bottom: 30px;
+    text-align: center;
+}
+.accordion .content-container .quetion{
+    padding: 18px 0px;
+    font-size: 22px;
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+
+    position: relative;
+}
+.accordion .content-container .quetion::after{
+    content: '+';
+
+    position: absolute;
+    right: 5px;
+}
+.accordion .content-container .answer{
+    padding-top: 15px;
+    font-size: 22px;
+    line-height: 1.5;
+    width: 100%;
+
+    height: 0px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+
+/*javascript style link*/
+.accordion .content-container.active .answer{
+    height: 150px;
+}
+.accordion .content-container.active .quetion{
+    font-size: 18px;
+    transition: .5s;
+}
+.accordion .content-container.active .quetion::after{
+    content: '-';
+    font-size: 30px;
+    transition: .5s;
+}
+

@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    text-align: justify;
+    padding: 30px;
+
+}
+h1{
+    margin: 8px;
+    margin-left: 50px;
+    
+}
+.signUp{
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 100px rgba(230, 92, 92);
+}
+.sign-group{
+    margin-bottom: 15px;
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 50px;
+    color: blue;
+}
+input{
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px ;
+    margin-left: 50px;
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input:hover{
+    border-color: blue;
+    transition: 0.5s;
+}
+button{
+    border-radius: 25px;
+    margin: 20px 10px;
+    margin-left: 50px;
+    width: 200px;
+    padding: 10px 0;
+    background: transparent;
+    font-weight: bold;
+    background-color: blue;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+}
+button:hover{
+    background-color: green;
+    border: none;
+    transition: 1s;
+}
+.sign{
+    color: red;
+    margin: 8px;
+    margin-left: 50px;
+}
